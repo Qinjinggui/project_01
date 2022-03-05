@@ -1,0 +1,58 @@
+{
+  "id": "3212862",
+  "name": "仿暴风影音",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "145497",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "866473",
+      "name": "Mac",
+      "font_class": "mac",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "2325951",
+      "name": "win",
+      "font_class": "win",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "2678618",
+      "name": "免费",
+      "font_class": "mianfei",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "4933259",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "11356284",
+      "name": "HD",
+      "font_class": "HD",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "12586802",
+      "name": "iOS",
+      "font_class": "iOS",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    }
+  ]
+}

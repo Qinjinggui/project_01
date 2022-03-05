@@ -1,0 +1,681 @@
+/* 版心 */
+
+.w {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 16px!important;
+}
+
+@media screen and (max-width: 1650px) {
+    .w {
+        width: 1225px;
+        margin: 0 auto;
+    }
+    html {
+        font-size: 14px!important;
+    }
+    .banner-download>div:nth-child(1) {
+        width: 375px;
+        height: 302px;
+    }
+    .banner-download>div:nth-child(1) img {
+        width: 360px;
+        height: 288px;
+    }
+}
+
+
+/* 字体变色 */
+
+.font-color {
+    color: #0184ff;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.layout-wrapper {
+    background-color: #16161c;
+}
+
+
+/* 页面头部模块  */
+
+.head-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    z-index: 999;
+}
+
+header {
+    height: 100%;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 100%;
+    padding-top: 12px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-wrap {
+    float: left;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 55px;
+    width: 236px;
+    height: 100%;
+}
+
+.nav-wrap a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+.control-wrap {
+    float: right;
+    position: relative;
+    width: 572px;
+    height: 100%;
+}
+
+.control-wrap input,
+.control-wrap button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    border-radius: 32px;
+}
+
+.input-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    height: 366px;
+    padding: 14px;
+    background: linear-gradient(180deg, #31313c, #16161c);
+    border-radius: 4px;
+}
+
+.input-dropdown ul li:nth-child(n+2) {
+    height: 30px;
+    cursor: pointer;
+}
+
+.input-dropdown ul li:nth-child(n+2):hover {
+    background-color: #42424b;
+}
+
+.input-dropdown ul li:nth-child(1) {
+    font-size: 16px;
+    color: #979797;
+    margin-bottom: 12px;
+}
+
+.input-dropdown span {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #d5d5d5;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.input-dropdown .dropdown-num {
+    display: inline-block;
+    margin: 5px 4px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #0184ff;
+    color: #fff;
+}
+
+.input-dropdown ul li:nth-child(n+5)>.dropdown-num {
+    background-color: #4c4c52;
+}
+
+.control-wrap input {
+    left: 0;
+    width: 352px;
+    padding-left: 8px;
+    color: #757575;
+    background: hsla(0, 0%, 100%, .1);
+}
+
+.control-wrap button {
+    left: 278px;
+    width: 74px;
+    color: #fff;
+    background-color: #02a3ff;
+}
+
+.control-wrap-right {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 28px;
+}
+
+.control-wrap-right div,
+.control-wrap-right a {
+    height: 100%;
+    width: 28px;
+    line-height: 28px;
+}
+
+.control-wrap-right div {
+    cursor: pointer;
+}
+
+.control-wrap-right .vip-tip {
+    background: url(../images/vip.png) no-repeat;
+}
+
+.control-wrap-right .vip-dropdown {
+    position: absolute;
+    top: 36px;
+    left: -110px;
+    width: 250px;
+    height: 259px;
+    text-align: center;
+    background: linear-gradient(180deg, #3a3a4a, #292939);
+}
+
+.control-wrap-right .vip-dropdown>span {
+    position: absolute;
+    top: -10px;
+    left: 119px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #414755;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(1) {
+    display: inline-block;
+    margin: 24px auto;
+    width: 200px;
+    height: 34px;
+    border: 1px solid #ae9372;
+    border-radius: 15px;
+    color: #ae9372;
+    font-size: 14px;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(1) a {
+    line-height: 34px;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(2) {
+    font-size: 12px;
+    color: #979797;
+    margin-bottom: 14px;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(2) span {
+    display: inline-block;
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(180deg, #51515c, #51515d);
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(3) {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(3) span {
+    width: 50%;
+    height: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #979797;
+    margin-bottom: 14px;
+}
+
+.control-wrap-right .vip-dropdown ul li:nth-child(4) {
+    display: inline-block;
+    margin-top: 12px;
+    width: 200px;
+    height: 34px;
+    border: 1px solid #ae9372;
+    border-radius: 15px;
+    background: linear-gradient(to right, #f9e5ad, #fbcd8c);
+    color: #65553c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.control-wrap-right .vip-dropdown a {
+    color: inherit;
+    font-size: inherit;
+}
+
+.control-wrap-right a {
+    font-size: 24px;
+    color: #6b6b6b;
+}
+
+.control-wrap-right a:hover {
+    color: #02a3ff;
+}
+
+.login-tip img {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.login-tip:hover img {
+    background-color: #02a3ff;
+}
+
+.control-wrap-right .login-dropdown {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 350px;
+    height: 114px;
+    border-radius: 4px;
+    background-color: #353545;
+}
+
+.control-wrap-right .login-dropdown span {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #414755;
+}
+
+.control-wrap-right .login-dropdown div:nth-of-type(1) {
+    margin: 25px 18px;
+    width: 100%;
+    height: 22px;
+    background: url(../images/baofenyy.png) no-repeat;
+    background-size: 96px auto;
+}
+
+.control-wrap-right .login-dropdown div:nth-of-type(2) {
+    margin: 0 18px;
+    width: 100%;
+}
+
+.control-wrap-right .login-dropdown div:nth-of-type(2) i {
+    font-size: 14px;
+}
+
+.control-wrap-right .login-dropdown div:nth-of-type(2) a {
+    display: inline-block;
+    margin-left: 81px;
+    width: 62px;
+    height: 25px;
+    border-radius: 13px;
+    text-align: center;
+    background-color: #02a4ff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/* 页面头部模块  */
+
+
+/* 页面主体内容模块 */
+
+
+/* 轮播图模块 */
+
+.banner-wrapper {
+    width: 100%;
+    height: 22.595rem;
+    background-color: #000;
+}
+
+.banner-content {
+    position: relative;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.swiper-container {
+    position: relative;
+    width: 1000%;
+    height: 100%;
+    left: -87.5rem;
+}
+
+.swiper-container>div {
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.swiper-container a {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container a img {
+    width: 87.5rem;
+    height: 100%;
+}
+
+.swiper-container a div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.swiper-container a div p:nth-child(1) {
+    font-size: 30px;
+}
+
+.swiper-container a div p:nth-child(2) {
+    font-size: 18px;
+}
+
+.swiper-container a div p:nth-child(3) {
+    font-size: 18px;
+    color: #7d7d7d;
+}
+
+.arrow-left::after,
+.arrow-right::after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 3px solid #0184ff;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+}
+
+.arrow-left::after {
+    transform: translateY(-50%) rotate(45deg);
+    left: 10px;
+}
+
+.arrow-right::after {
+    transform: translateY(-50%) rotate(225deg);
+    right: 10px;
+}
+
+.swiper-dot {
+    position: absolute;
+    bottom: 36px;
+    right: 0;
+}
+
+.dot-current {
+    background-color: #02a3ff!important;
+    opacity: 1!important;
+}
+
+.swiper-dot span {
+    display: inline-block;
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: red;
+    /* opacity: .2; */
+    cursor: pointer;
+}
+
+
+/* 轮播图模块 */
+
+
+/* 下载模块 */
+
+.banner-download {
+    position: relative;
+    height: 340px;
+    background: url(../images/download-bg.png) no-repeat;
+    background-position: 50%;
+}
+
+.banner-download>div:nth-child(1) {
+    position: absolute;
+    flex: 1;
+    top: 0;
+    left: 7.5rem;
+    width: 360px;
+    height: 290px;
+}
+
+.banner-download div:nth-child(1) img {
+    width: 360px;
+    height: 288px;
+}
+
+.download-container {
+    position: absolute;
+    top: 0;
+    left: 30rem;
+    height: 100%;
+    width: 57.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download-links {
+    padding-top: 30px;
+    width: 350px;
+    height: 300px;
+}
+
+.download-links ul li p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.download-links ul li h1 {
+    font-size: 24px;
+    margin-bottom: 28px;
+    color: #dcdadf;
+}
+
+.download-links ul li h2 {
+    font-style: 18px;
+    font-weight: 400;
+    color: #8f9ca6;
+}
+
+.download-links a {
+    display: block;
+    width: 170px;
+    height: 40px;
+    margin-top: 24px;
+    background-color: #0193ff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.download-links a span {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.download-picks {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    width: 10.375rem;
+    height: 275px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+}
+
+.download-picks ul li {
+    margin-bottom: 8px;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d0d1d2;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.download-picks-current {
+    background: linear-gradient(90deg, #02aaff, #0180ff);
+}
+
+
+/* 下载模块 */
+
+.movie-container {
+    width: 100%;
+}
+
+.movie-container h1 {
+    margin: 36px 0 12px;
+    width: 100%;
+    height: 28px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.movie-lists {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    height: 320px;
+}
+
+.movie-lists>div {
+    width: 180px;
+    cursor: pointer;
+}
+
+.movie-lists>div div {
+    position: relative;
+    margin: 8px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie-lists>div img {
+    width: 100%;
+}
+
+.movie-lists>div img:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.movie-lists>div h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.movie-lists>div h2:hover {
+    color: #02a4ff;
+}
+
+.movie-lists>div p {
+    font-size: 14px;
+    color: #8b8b8e;
+}
+
+.mv-vip {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 20px;
+    background: url(../images/MV-VIP.png) no-repeat;
+}
+
+
+/* 页面主体内容模块 */
+
+
+/* 页面底部模块 */
+
+footer {
+    width: 100%;
+    height: 220px;
+    background-color: #16161c;
+}
+
+.footer-container {
+    width: 1100px;
+    height: 120px;
+    margin: 45px auto;
+}
+
+.foot-logo {
+    float: left;
+    height: 100%;
+    width: 216px;
+    line-height: 120px;
+    border-right: 1px solid #fff;
+}
+
+.foot-info {
+    float: left;
+    width: 884px;
+    height: 100%;
+}
+
+.foot-info p {
+    height: 24px;
+    margin-left: 59px;
+}
+
+.foot-info p a {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+
+/* 页面底部模块 */

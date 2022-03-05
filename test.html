@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        @media screen and (min-width:1600px) {
+            html {
+                font-size: 20px !important;
+            }
+        }
+        
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    </div>
+    <script>
+        let box = document.querySelector('div');
+        box.style.width = 10 + 'rem';
+        let a = box.offsetLeft / 16;
+        console.log(typeof a);
+        // function animate(obj, target, callback) {
+        //     clearInterval(obj.timer); //先清除定时器，防止叠加
+        //     obj.timer = setInterval(function() {
+        //         let x = (target - obj.offsetLeft) / 10; //步长
+        //         x = x > 0 ? Math.ceil(x) : Math.floor(x);
+        //         if (obj.offsetLeft == target) {
+        //             clearInterval(obj.timer); //当移动大于目标值时停止
+        //             if (callback) {
+        //                 callback();
+        //             }
+        //         } else {
+        //             obj.style.left = obj.offsetLeft + x + 'px';
+        //         }
+        //     }, 30)
+        // }
+        let html = document.querySelector('html');
+        console.log(html.style.fontSize);
+
+        function animate(obj, target, callback) {
+            clearInterval(obj.timer); //先清除定时器，防止叠加
+            obj.timer = setInterval(function() {
+                let x = (target - obj.offsetLeft) / 5; //步长
+                x = x > 0 ? Math.ceil(x) : Math.floor(x);
+                if (obj.offsetLeft == target) {
+                    if (html.style.fontSize == '16px') {
+                        obj.style.left = (obj.offsetLeft / 16) + 'rem';
+                        clearInterval(obj.timer); //当移动等于目标值时停止
+                        if (callback) { //回调函数
+                            callback();
+                        }
+                    } else if (html.style.fontSize == '14px') {
+                        obj.style.left = (obj.offsetLeft / 14) + 'rem';
+                        clearInterval(obj.timer); //当移动等于目标值时停止
+                        if (callback) { //回调函数
+                            callback();
+                        }
+                    }
+                } else {
+                    obj.style.left = obj.offsetLeft + x + 'px';
+                }
+            }, 10)
+        }
+        // animate(box, 160, function() {
+        //     box.style.backgroundColor = 'blue';
+        //     // box.style.left = 10 + 'rem';
+        // });
+        // document.addEventListener('scroll', function() {
+        //     let w = window.pageXOffset;
+        //     console.log(w);
+        // })
+
+        // const someAsyncThing = function() {
+        //     return new Promise(function(resolve, reject) {
+        //         // 下面一行会报错，因为x没有声明
+        //         resolve(x + 2);
+        //     });
+        // };
+
+        // someAsyncThing()
+        //     .catch(function(error) {
+        //         console.log('oh no', error);
+        //     })
+        //     .then(function() {
+        //         console.log('carry on');
+        //     })
+        //     .finally(() => {
+        //         console.log(333);
+        //     })
+        // const promise = new Promise((resolve, reject) => {
+        //     resolve('ok');
+        // });
+        // promise
+        //     .finally(() => {
+        //         console.log(444);
+        //     })
+
+        // const resolved = Promise.resolve(42);
+        // const rejected = Promise.reject(-1);
+
+        // const allSettledPromise = Promise.allSettled([resolved, rejected]);
+
+        // allSettledPromise.then(function(results) {
+        //     console.log(results);
+        // });
+
+        let arr = [3, 5, 7, {
+            foo: 'hello'
+        }];
+        // arr.foo = 'hello';
+
+        for (let i in arr) {
+            console.log(i); // "0", "1", "2", "foo"
+        }
+
+        for (let i of arr) {
+            console.log(i); //  "3", "5", "7"
+        }
+    </script>
+</body>
+
+</html>
